@@ -3,6 +3,8 @@ library(shiny)
 library(readxl)
 library(DT)
 
+setwd("/Users/audrey/Downloads/research/ckweb/Tcellstates")
+
 # Define server logic
 function(input, output, session) {
   
@@ -308,6 +310,8 @@ function(input, output, session) {
   
 }
 
+# return(server)
+
 
 # # ############################## CODE GRAVEYARD ##############################
 # # # output$main <- renderUI({
@@ -453,41 +457,4 @@ function(input, output, session) {
 #       return(naive_data()[apply(naive_data(), 1, function(x) any(grepl(keyword, tolower(x)))), ])
 #     }
 #   })
-#   
-#   # Render the table for naive tab
-#   output$table_naive <- renderDT({
-#     filtered_naive_data()
-#   })
 
-# # 
-# # # output$te <- renderText({
-# # #   "TF Activity Score: TE"
-# # # })
-# # # 
-# # # output$mp <- renderText({
-# # #   "TF Activity Score: MP"
-# # # })
-# # # 
-# # # output$tcm <- renderText({
-# # #   "TF Activity Score: T CM"
-# # # })
-# # # 
-# # # output$tem <- renderText({
-# # #   "TF Activity Score: T EM"
-# # # })
-# # # 
-# # # output$trm <- renderText({
-# # #   "TF Activity Score: T RM"
-# # # })
-# # # 
-# # # output$texprog <- renderText({
-# # #   "TF Activity Score: Tex Prog"
-# # # })
-# # # 
-# # # output$texefflike <- renderText({
-# # #   "TF Activity Score: Tex Eff-like"
-# # # })
-# # # 
-# # # output$texterm <- renderText({
-# # #   "TF Activity Score: Tex Term"
-# # # })

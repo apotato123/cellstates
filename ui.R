@@ -2,6 +2,8 @@ library(shiny)
 library(shinythemes)
 library(DT)
 
+setwd("/Users/audrey/Downloads/research/ckweb/Tcellstates")
+
 # Define UI
 ui <- navbarPage(
   title = "T Cell States",
@@ -1169,6 +1171,8 @@ ui <- navbarPage(
     )
   )
 )
+
+# return(ui)
 
 
 ############################## CODE GRAVEYARD ##############################
